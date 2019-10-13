@@ -1,19 +1,73 @@
+.main {
+  margin-left: 140px;
+  padding: 10px;
+  padding-left: 20px;
+  scroll-behavior: smooth;
+}
+
 .sidebar {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
   height: 100%;
-  width: 160px;
+  width: 150px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: black;
   overflow-x: hidden;
-  padding: 20px;
+  <!-- padding: 20px; -->
+  padding-top: 15px;
+}
+
+.sidebar t {
+  cursor: default;
+  padding: 5px 5px 5px 15px;
+  text-decoration: none;
+  font-size: 32px;
+  color: white;
+  display: block;
 }
 
 .sidebar a {
-  padding: 5px 5px 5px 10px;
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
   text-decoration: none;
   font-size: 20px;
+  color: gray;
+  transition: 0.2s;
+}
+
+.sidebar a:hover {
+  padding-left: 15px;
   color: white;
+}
+
+.sidebar a_selected {
+  cursor: default;
   display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  background-color: gray;
+  transition: 0.2s;
+}
+
+.sidebar a_selected {
+  padding-left: 15px;
+}
+
+.divider{
+  width:5px;
+  height:5px;
+
 }
