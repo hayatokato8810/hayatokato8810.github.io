@@ -28,7 +28,7 @@
   cursor: default;
   padding: 5px 5px 5px 15px;
   text-decoration: none;
-  font-size: 32px;
+  font-size: 30px;
   color: white;
   display: block;
 }
@@ -62,12 +62,37 @@
   transition: 0.2s;
 }
 
-.sidebar a_selected {
-  padding-left: 15px;
+ul {
+  display: block;
+  list-style-type: square;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 30px;
+}
+
+hr {
+  display: block;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 2px;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
 }
 
 .divider{
   width:5px;
   height:5px;
-
 }
