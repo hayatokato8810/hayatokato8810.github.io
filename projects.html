@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<!-- Tab Name -->
+<head>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <title>Hayato Kato - Projects</title>
+</head>
+
+<body>
+
+  <div class="sidebar">
+    <img src="TinyRobot.jpg" alt="Tiny" width=150px height=150px>
+    <t> Hayato S. Kato </t>
+    <a href="home.html"> Home </a>
+    <a href="about.html"> About </a>
+    <a_selected> Projects </a_selected>
+    <a href="gallery.html"> Gallery </a>
+    <a href="contact.html"> Contact </a>
+  </div>
+
+  <div class="main">
+    <h3>Past Project List</h3>
+    <hr>
+    2022
+    <button class="collapsible">Multi-Robot Ground Swarm Simulation Using a Minimally Invasive Safety Critical Controller - ECE236C</button>
+    <div class="content">
+      <p>
+        A course project required proposing a large-scale optimization problem that can utilize techniques learned in class to efficiently solve such problems 
+      </p>
+    </div>
+
+    <button class="collapsible">Extremely Rigid 5DoF Testbed - RoMeLa</button>
+    <div class="content">
+      <p>
+        An automated testbed was needed in lab to enable autonomous testing of the spine gripper sliding across a ground surface at various angles. A previous prototype made by a different graduate student had a lot of backlash in the system which made the FT sensor readings unreliable and inconsistent. I was asked to design and manufacture a second version of the system which fixes these existing issues.
+      </p>
+    </div>
+
+    2021
+
+    <button class="collapsible">Marshland Soil Core Sampling Semi-Automated Robot - ECE183D Capstone</button>
+    <div class="content">
+      <p>
+        
+      </p>
+    </div>
+
+    <button class="collapsible">ARC Grappling Hook Robot - ASME X1 Robotics</button>
+    <div class="content">
+      <p>
+        
+      </p>
+    </div>
+
+    2020
+    <button class="collapsible">BotW Guardian Hexapod Robot - ASME X1 Robotics</button>
+    <div class="content">
+      <p>
+        
+      </p>
+    </div>
+
+    2019
+    <button class="collapsible">All American Micromouse Competition at UCLA - IEEE</button>
+    <div class="content">
+      <p>
+        
+      </p>
+    </div>
+
+    <hr>
+    <address>
+    <script>
+       const date = new Date(document.lastModified).toLocaleDateString();
+       document.write("Last Modified: "+date);
+    </script>
+    <br>
+      Hayato Kato</address>
+  </div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>
