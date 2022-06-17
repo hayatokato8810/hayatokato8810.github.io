@@ -133,8 +133,12 @@ h3 {
   content: "\2212";
 }
 
+.image{
+  text-align: center;
+}
+
 .content {
-  padding: 0 18px;
+  padding: 0 20px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
