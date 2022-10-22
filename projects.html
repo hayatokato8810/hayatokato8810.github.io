@@ -15,6 +15,7 @@
     <a href="index.html"> Home </a>
     <a href="about.html"> About </a>
     <a_selected> Projects </a_selected>
+    <a href="research.html"> Research </a>
     <a href="gallery.html"> Gallery </a>
     <a href="contact.html"> Contact </a>
   </div>
@@ -23,7 +24,7 @@
     <h3>Past Projects</h3>
     <hr>
 
-    2022
+    <h3>2022</h3>
     <button class="collapsible">Multi-Robot Ground Swarm Simulation Using a Minimally Invasive Safety Critical Controller - ECE236C</button>
     <div class="content">
       
@@ -42,20 +43,36 @@
       </div>
     </div>
 
-    <button class="collapsible">Extremely Rigid 4DoF Testbed - RoMeLa</button>
+    <button class="collapsible"> Rigid 4DoF Testbed Platform Hardware Design - RoMeLa</button>
     <div class="content">
       <p>
         <div class="image">
           <img src="media/Testbed_CAD.gif" height=200px>
-          <img src="media/Testbed_Picture.png" height=200px>
+          <img src="media/Testbed_Platform_Picture.png" height=200px>
         </div>
         <div>
-          An automated testbed was needed in lab to enable autonomous testing of a spine gripper sliding across a ground surface at various angles. A previous prototype made by a different graduate student had a lot of backlash in the system which made the FT sensor readings unreliable and inconsistent. I was asked to design and manufacture a second version of the system which fixes these existing issues.
+          The original 5DoF testbed design was revised to meet the needs of a new experiment, thus a new test platform was needed to withstand the stronger forces from the gripper. A previous prototype made by a different graduate student had a lot of backlash in the system which made the FT sensor readings unreliable and inconsistent. I was asked to redesign and manufacture a second version of the system which fixes these existing issues. I utilized helical gears to improve the meshing between 3D printed parts, along as introducing a tensioning system using screws that pressed down on bearings to adjust the force on the moving gear. 
+
         </div>
       </p>
     </div>
 
-    2021
+    <h3>2021</h3>
+
+    <button class="collapsible"> 5DoF Testbed Firmware Design - RoMeLa</button>
+    <div class="content">
+      <p>
+        <div class="image">
+          <img src="media/Testbed_Picture.jpg" height=200px>\
+        </div>
+        <div>
+          An automated testbed was needed in lab to enable autonomous testing of a spine gripper sliding across a ground surface at various angles. The hardware was already prebuilt by another mechanical engineering student, and I was asked to bring together each of the different subcomponents and write a firmware that coordinated the motion across the stepper motors in charge of linear motion and the dynamixel servo motors in charge of the orientation of the platform. My system relied on a set of motion instructions being saved in a YAML file format which the testbed can interpret line-by-line and execute sequentially, similar to how G-code works. A second version which uses G-code syntax was in the works, but was later discontinued due to other priorities within the lab.
+        </div>
+        <p style="text-align:right;">
+          Click <a href="https://github.com/hayatokato8810/RoMeLa-Testbed">here</a> to see more
+        </p>
+      </p>
+    </div>
 
     <button class="collapsible">Semi-Autonomous Marshland Soil Core Sampling Robot - ECE183D Capstone</button>
     <div class="content">
@@ -86,7 +103,8 @@
       </p>
     </div>
 
-    2020
+    <h3>2020</h3>
+
     <button class="collapsible">BotW Guardian Hexapod Robot - ASME X1 Robotics</button>
     <div class="content">
       <p>
@@ -106,7 +124,8 @@
       </p>
     </div>
 
-    2019
+    <h3>2019</h3>
+
     <button class="collapsible">All American Micromouse Competition at UCLA - IEEE</button>
     <div class="content">
       <p>
@@ -124,7 +143,8 @@
       </p>
     </div>
 
-    2018
+    <h3>2018</h3>
+
     <button class="collapsible">Line Following Robot Competition - ECE3</button>
     <div class="content">
       <p>
@@ -139,7 +159,8 @@
       </p>
     </div>
 
-    2016
+    <h3>2016</h3>
+
     <button class="collapsible">The Study of the Behavior of Swarm Robots Having Collective Intelligence - 2015-2016 California State Science Fair</button>
     <div class="content">
       <p>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<!-- Tab Name -->
+<head>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="icon" href="media/TinyRobot.jpg">
+  <title>Hayato Kato - Research</title>
+</head>
+
+<body>
+
+  <div class="sidebar">
+    <img src="media/TinyRobot.jpg" alt="Tiny" width=150px height=150px>
+    <t> Hayato S. Kato </t>
+    <a href="index.html"> Home </a>
+    <a href="about.html"> About </a>
+    <a href="projects.html"> Projects </a>
+    <a_selected> Research </a_selected>
+    <a href="gallery.html"> Gallery </a>
+    <a href="contact.html"> Contact </a>
+  </div>
+
+  <div class="main">
+    <h3> Research Experience </h3>
+    <hr>
+
+    <p>
+      <h3> Robotics and Mechanism Laboratory (RoMeLa) </h3>
+      <ul>
+        <li>Spine Enhanced Climbing Autonomous Legged Exploration Robot (SCALER)</li>
+        <ul>
+          <li>Y. Tanaka et al., "Scaler: A tough versatile quadruped free-climber robot," in Proc. IEEE/RSJ Intl. Conf. on Intelligent Robots and Systems, IROS, (Kyoto, Japan), Oct. 2022 </li>
+          <ul>
+              <li>Improved hardware reliability by remaking wires and redoing the leg wire management</li>
+              <li>Modified the purchased linear actuators by attaching cooling fans to prevent overheating damage</li>
+              <li>Integrated an STM32 onboard the grippers to make them controllable via serial connection and redid the wiring so that the gripper is a standalone module connected by a single power line and 12 pin communication line</li>
+          </ul>
+          <li>Y. Shirai et al., "Simultaneous Contact-Rich Grasping and Locomotion via Distributed Optimization Enabling Free-Climbing for Multi-Limbed Robots", in Proc. IEEE/RSJ Intl. Conf. on Intelligent Robots and Systems, IROS, (Kyoto, Japan), Oct. 2022 </li>
+          <ul>
+            <li>Rewrote a pre-existing MATLAB visualization code for SCALAR to improve usability and future expandability by modularizing each component (main chassis, limbs, grippers, etc.)</li>
+          </ul>
+        </ul>
+        <li>Garama RC Racing Platform</li>
+        <ul>
+          <li>Wrote a camera orientation estimation script that would take in a series of the car's first person view and figures out how the car moves within 3D space based on features found using the ORB algorithm</li>
+          <li>Reworked the wiring onboard by optimizing the wire lengths and fixed the soldering job done by the PhD student to improve reliability</li>
+          <li>Collected driving data used to train the behavior cloning neural network</li>
+        </ul>
+      </ul>
+
+      <hr>
+
+      <h3> Dunn Lab </h3>
+        <ul>
+          <li>Worked with Prof. Bruce Dunn in the MSE department to develop a BLE enabled optoprobe device that is hooked up to a living mouse to send a two-channel optical stimulation to different parts of its brain via optical fibers</li>
+          <ul>
+            <li>Wrote a C++ script alongside another undergraduate student for the BMD-350 chip to communicate with an evaluation board hooked up with the computer</li>
+            <li>Designed a custom GUI within MATLAB to send the appropriate serial commands to the evaluation board which transmitted a sequence of bits that determined what frequency the two LEDs flashed at</li>
+          </ul>
+        </ul>
+
+      <hr>
+
+      <h3> Interconnected & Integrated Bioelectronics Lab (I<sup>2</sup>BL) </h3>
+      <ul>
+        <li>Worked for Prof. Sam Emaminejad to develop a near IR spectroscopy system for lower leg tissue oxygenation monitoring</li>
+        <ul>
+          <li>Looked into various transimpedance amplifier designs that improved the old design by achieving higher output precision with good noise performance, all with minimum power consumption</li>
+          <li>Redesigned the circuit schematic and rerouted the PCB to make it more compact (approx. 40% board area reduction)</li>
+        </ul>
+      </ul>
+    </p>
+
+    <hr>
+    <address>
+    <script>
+       const date = new Date(document.lastModified).toLocaleDateString();
+       document.write("Last Modified: "+date);
+    </script>
+    <br>
+      Hayato Kato</address>
+  </div>
+
+</body>
+</html>
