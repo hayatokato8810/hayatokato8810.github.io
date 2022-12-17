@@ -38,13 +38,21 @@
               <li>Improved hardware reliability by remaking wires and redoing the leg wire management</li>
               <li>Modified the purchased linear actuators by attaching cooling fans to prevent overheating damage</li>
               <div class="image">
-                <img src="media/RoMeLa/CAD2.png" height=200px>
-                <img src="media/RoMeLa/CAD1.png" height=200px>
+                <img src="media/RoMeLa/LinearActuatorModV1.gif" height=200px>
+                <img src="media/RoMeLa/LinearActuatorModV1.png" height=200px>
               </div>
               <li>Integrated an STM32 onboard the grippers to make them controllable via serial connection and redid the wiring so that the gripper is a standalone module connected by a single power line and 12 pin communication line</li>
               <div class="image">
-                <img src="media/RoMeLa/Picture.png" height=200px>
+                <img src="media/RoMeLa/LinearActuatorModV2.gif" height=200px>
+                <img src="media/RoMeLa/LinearActuatorModV2.png" height=200px>
               </div>
+
+              <li>Streamlined the second design by designing a custom PCB board that mounts the 8 pin circular connector which passes both the power and signal wires to the gripper using a single cable. Integrated dynamixel connectors used by the wrist and the voltage regulator needed to power the linear actuator. Also brought back the double fan design from the initial version to improve cooling during operation</li>
+              <div class="image">
+                <img src="media/RoMeLa/LinearActuatorModV3.gif" height=200px>
+                <img src="media/RoMeLa/LinearActuatorModV3.png" height=200px>
+              </div>
+              
           </ul>
           <li><a href="https://arxiv.org/abs/2207.01418">Y. Shirai et al., "Simultaneous Contact-Rich Grasping and Locomotion via Distributed Optimization Enabling Free-Climbing for Multi-Limbed Robots", in Proc. IEEE/RSJ Intl. Conf. on Intelligent Robots and Systems, IROS, (Kyoto, Japan), Oct. 2022 </a></li>
           <ul>
