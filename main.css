@@ -137,6 +137,53 @@ h3 {
   text-align: center;
 }
 
+.columnLeft{
+  float: left;
+  width: 41.3%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.columnRight{
+  float: left;
+  width: 58.7%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.columnFull{
+  float: left;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.columnHalf{
+  float: left;
+  width: 48%;
+  padding: 0.5%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.columnThird{
+  float: left;
+  width: 32%;
+  padding: 0.5%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.imageRow::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.imageBox{
+  text-align: center;
+  object-fit: contain;
+}
+
 .content {
   padding: 0 20px;
   max-height: 0;
