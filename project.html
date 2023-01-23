@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+   <link rel="stylesheet" href="main.css">
+   <script src="https://kit.fontawesome.com/23291616ec.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="navbar">
+  <img src="media/Profile/TinyRobot.jpg" alt="Tiny" class="icon">
+  <name>Hayato S. Kato</name>
+  <tabs>
+    <a_buffer></a_buffer>
+    <a_container><a_top>
+      <a href="index.html"> Home </a>
+      <a href="about.html"> About </a>
+    </a_top></a_container>
+    <a_selected> Project </a_selected>
+    <a_container><a_bottom>
+      <a href="research.html"> Research </a>
+      <a href="coursework.html"> Coursework </a>
+      <a href="gallery.html"> Gallery </a>
+      <a href="contact.html"> Contact </a>
+    </a_bottom></a_container>
+  </tabs>
+</div>
+
+<main>
+  <h1>Project Archive</h1>
+   
+  <h3>Rigid 4DoF Testbed Platform Hardware Design - RoMeLa
+  </h3>
+
+  <div class="card-holder">
+    <img src="media/Testbed/CAD.gif" style="width:38%">
+    <img class="card" src="media/Testbed/PlatformPicture.png" style="width:65%">
+  </div>
+
+  <p style="padding:0.5rem">
+    The original 5DoF testbed design was revised to meet the needs of a new experiment, thus a new test platform was needed to withstand the stronger forces from the gripper. A previous prototype made by a different graduate student had a lot of backlash in the system which made the FT sensor readings unreliable and inconsistent. I was asked to redesign and manufacture a second version of the system which fixes these existing issues. I utilized helical gears to improve the meshing between 3D printed parts, along as introducing a tensioning system using screws that pressed down on bearings to adjust the force on the moving gear.
+    </p> 
+
+  <h3>5DoF Testbed Control Firmware Design - RoMeLa
+  </h3>
+  <div class="card-holder">
+    <img class="card" src="media/Testbed/Picture.jpg" style="width:36%">
+    <img class="card" src="media/Testbed/YAML.png" style="width:30%">
+  </div>
+
+  <p style="padding:0.5rem">
+    An automated testbed was needed in lab to enable autonomous testing of a spine gripper sliding across a ground surface at various angles. The hardware was already prebuilt by another mechanical engineering student, and I was asked to bring together each of the different subcomponents and write a firmware that coordinated the motion across the stepper motors in charge of linear motion and the dynamixel servo motors in charge of the orientation of the platform. My system relied on a set of motion instructions being saved in a YAML file format which the testbed can interpret line-by-line and execute sequentially, similar to how G-code works. A second version which uses G-code syntax was in the works, but was later discontinued due to other priorities within the lab.
+  </p>
+  <div style="text-align:right;">
+    Click <a href="pdf/ECE183D_CDR.pdf">here</a> to see more
+  </div>
+
+  <h3>ARC Grappling Hook Robot - ASME X1 Robotics
+  </h3>
+  <div class="card-holder">
+    <img class="card" src="media/ARC/ARC.png" style="width:32%">
+    <img class="card" src="media/ARC/inertialDisk.gif" style="width:42%">
+  </div>
+
+  <p style="padding:0.5rem">
+    Inspired by the 3D maneuver gear that are used in the Attack of Titan anime/manga series, this conceptual robot utilizes launched wires that attach to walls/ceilings and uses swinging motion as its primary method of transportation. As the controls subsystem lead, I primarily overlooked the software for minimizing the oscillations of the robot while suspended on the cable and self-fixing its orientation when aiming its next launch. 
+  </p>       
+  <div style="text-align:right;">
+    Click <a href="https://docs.google.com/document/d/19LU3ZxawcN80XK8AgR3UoHR5EES4xSg17xHP6N0zM5w/edit?usp=sharing">here</a> to see more
+  </div>
+
+  <h3>BotW Guardian Hexapod Animatronics - ASME X1 Robotics
+  </h3>
+  <div class="card-holder">
+    <img class="card" src="media/Guardian/Targeting.gif" style="width:58%">
+    <img src="media/Guardian/TargetAnimation.gif" style="width:28%">
+  </div>
+  <div class="card-holder">
+    <video style="width:90%" poster="media/Guardian/BotWX1Guardian.png" controls>
+      <source src="media/Guardian/BotWX1Guardian.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <p style="padding:0.5rem">
+    This hexapod robot is inspired from the famous video game called The Legend of Zelda: Breath of the Wild. In the game, there is a six-legged mechatronic enemy creature called the Guardian which roams around the field with a freely-rotating head and a laser-shooting eye. The project attempts to recreate its in-game counterpart in aesthetics, functionality, and behavior. Being the targeting subsystem lead, I primarily contributed in designing and manufacturing an accurate laser targeting system. I also helped out figuring out the inverse kinematics of the hexapod and developed the control code alongside another student which allows for the walking and rotating motion.
+  </p>
+  <div style="text-align:right;">
+    Click <a href="pdf/X1_Targeting_Subsystem_Documentation.pdf">here</a> to see more
+  </div>
+
+  <h3>All American Micromouse Competition at UCLA - IEEE
+  </h3>
+  <div class="card-holder">
+    <img class="card" src="media/Micromouse/PCB.png" style="width:35%">
+    <img class="card" src="media/Micromouse/Micromouse.jpg" style="width:52%">
+  </div>
+  <div class="card-holder">
+    <video style="width:90%" poster="media/Micromouse/Thumbnail.png" controls>
+      <source src="media/Micromouse/Video.mp4" type="video/mp4">
+    </video>
+  </div>
+  <p style="padding:0.5rem">
+    Participated in the 2019 All American Micromouse Competition (AAMC) at UCLA, where me and my friend designed a mouse from scratch and developed our own maze-solving algorithm implemented on a STM32 chip. Out of 13 other participating teams coming from regional universities, we placed 5th and achieved an extra award for traversing the most number of cells within the maze.
+  </p>
+
+  <h3>The Study of the Behavior of Swarm Robots Having Collective Intelligence - 2015~2016 California State Science Fair 
+  </h3>
+  <div class="card-holder">
+    <img class="card" src="media/Swarm/swarm_Quarter.jpg" style="width:35%">
+    <img class="card" src="media/Swarm/swarm.jpg" style="width:40%">
+  </div>
+  <div class="card-holder">
+    <iframe width="560" height="320" src="https://www.youtube.com/embed/videoseries?list=PLJG5QgPJrqUhv5BXS3Lhe-0xJaroDzuZS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <p style="padding:0.5rem">
+    Built a total of 11 swarm robots which were individually limited in function, but collectively were able to accomplish a complicated task by mimicking an ant colony's swarm intelligence. Submitted to the 2015-2016 California State Science Fair and received 3rd place in the Senior Division of the Electronics & Electromangnetics category.
+  </p>
+
+
+  <hr>
+
+  <address>
+  <script>
+     const date = new Date(document.lastModified).toLocaleDateString();
+     document.write("Last Modified: "+date);
+  </script>
+  <a title="Back to Top of Page" style="float:right;" href="#top"><i class="fa-solid fa-caret-up btn"></i></a>
+  <br>
+    Hayato S. Kato
+  </address>
+</main>
+
+</body>
+</html>

@@ -1,51 +1,53 @@
 <!DOCTYPE html>
-<html>
-<!-- Tab Name -->
-<head>
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <link rel="icon" href="media/Profile/TinyRobot.jpg">
-  <title>Hayato Kato - Home</title>
-</head>
 
+<html>
+<head>
+	 <link rel="stylesheet" href="main.css">
+</head>
 <body>
 
-  <div class="sidebar">
-    <img src="media/Profile/TinyRobot.jpg" alt="Tiny" width=150px height=150px>
-    <t> Hayato S. Kato </t>
-    <a_selected> Home </a_selected>
-    <a href="about.html"> About </a>
-    <a href="projects.html"> Projects </a>
-    <a href="research.html"> Research </a>
-    <a href="gallery.html"> Gallery </a>
-    <a href="contact.html"> Contact </a>
-  </div>
+<div class="navbar">
+	<img src="media/Profile/TinyRobot.jpg" alt="Tiny" class="icon">
+	<name>Hayato S. Kato</name>
+	<tabs>
+		<a_container><a_top>
+		</a_top></a_container>
+		<a_selected> Home </a_selected>
+		<a_container><a_bottom>
+			<a href="about.html"> About </a>
+	    <a href="project.html"> Project </a>
+	    <a href="research.html"> Research </a>
+      <a href="coursework.html"> Coursework </a>
+			<a href="gallery.html"> Gallery </a>
+			<a href="contact.html"> Contact </a>
+		</a_bottom></a_container>
+	</tabs>
+</div>
 
-  <div class="main">
-    <h3>Home Page</h3>
-    <hr>
-    <p>
-      Welcome to my personal portfolio, a website dedicated to showcasing all of the past projects that I have been involved with over the years. Thank you for coming, feel free to look around.
-    </p>
-    <p>
-      <ul>
-        <li><b>About</b> - A brief introduction of who I am, resume, etc.</li>
-        <li><b>Projects</b> - An archive of past projects that I have been involved with (club related, side project within lab, coursework, personal, etc.)</li>
-        <li><b>Research</b> - A list of research labs that I have been involved with/papers published</li>
-        <li><b>Gallery</b> - Showcase of all my work + other miscellaneous stuff/smaller projects</li>
-        <li><b>Contact</b> - Information to get ahold of me</li>
-      </ul>
-    </p>
-  
-    <hr>
-    <address>
-    <script>
-       const date = new Date(document.lastModified).toLocaleDateString();
-       document.write("Last Modified: "+date);
-    </script>
-    <br>
-      Hayato Kato</address>
-  </div>
+<main>
+	<h1>Home</h1>
+	
+	<p>Welcome to my personal portfolio, a website dedicated to showcasing all of the past projects that I have been involved with over the years. Thank you for coming, feel free to look around.</p>
+	<ul>
+	  <li><b>About</b> - A brief introduction of who I am, resume, etc.</li>
+	  <li><b>Project</b> - An archive of past projects that I have been involved with (club related, side project within lab, personal, etc.)</li>
+	  <li><b>Research</b> - A list of research labs that I have been involved with/papers published</li>
+	  <li><b>Coursework</b> - A list of final projects that I have worked on during my time at UCLA</li>
+	  <li><b>Gallery</b> - Showcase of all my work + other miscellaneous stuff/smaller projects</li>
+	  <li><b>Contact</b> - Information to get ahold of me</li>
+	</ul>
+	 
+	<hr>
+  <address>
+  <script>
+     const date = new Date(document.lastModified).toLocaleDateString();
+     document.write("Last Modified: "+date);
+  </script>
+  <br>
+    Hayato S. Kato
+  </address>
 
+</main>
 
 </body>
 </html>

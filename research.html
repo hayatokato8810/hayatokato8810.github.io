@@ -1,132 +1,134 @@
 <!DOCTYPE html>
-<html>
-<!-- Tab Name -->
-<head>
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <link rel="icon" href="media/Profile/TinyRobot.jpg">
-  <title>Hayato Kato - Research</title>
-</head>
 
+<html>
+<head>
+   <link rel="stylesheet" href="main.css">
+   <script src="https://kit.fontawesome.com/23291616ec.js" crossorigin="anonymous"></script>
+</head>
 <body>
 
-  <div class="sidebar">
-    <img src="media/Profile/TinyRobot.jpg" alt="Tiny" width=150px height=150px>
-    <t> Hayato S. Kato </t>
-    <a href="index.html"> Home </a>
-    <a href="about.html"> About </a>
-    <a href="projects.html"> Projects </a>
+<div class="navbar">
+  <img src="media/Profile/TinyRobot.jpg" alt="Tiny" class="icon">
+  <name>Hayato S. Kato</name>
+  <tabs>
+    <a_buffer></a_buffer>
+    <a_container><a_top>
+      <a href="index.html"> Home </a>
+      <a href="about.html"> About </a>
+      <a href="project.html"> Project </a>
+    </a_top></a_container>
     <a_selected> Research </a_selected>
-    <a href="gallery.html"> Gallery </a>
-    <a href="contact.html"> Contact </a>
-  </div>
+    <a_container><a_bottom>
+      <a href="coursework.html"> Coursework </a>
+      <a href="gallery.html"> Gallery </a>
+      <a href="contact.html"> Contact </a>
+    </a_bottom></a_container>
+  </tabs>
+</div>
 
-  <div class="main">
-    <h3> Research Experience </h3>
-    <hr>
+<main>
+  <h1>Research Experience</h1>
 
-    <p>
-      <h3 style="text-align:left;"> Robotics and Mechanism Laboratory (RoMeLa)
-        <span style="float:right;">
-          Summer 2021 &#8211 Present
-        </span>
-      </h3>
+  <h3>Robotics and Mechanisms Laboratory (RoMeLa)
+    <span class="align-right">Summer 2021 ~ Present</span>
+  </h3>
+
+  <ul>
+    <li><b>Spine Enhanced Climbing Autonomous Legged Exploration Robot (SCALER)</b></li>
+    <ul>
+      <li><a href="https://arxiv.org/abs/2207.01180">Y. Tanaka et al., "SCALER: A tough versatile quadruped free-climber robot," in Proc. IEEE/RSJ Intl. Conf. on Intelligent Robots and Systems, IROS, (Kyoto, Japan), Oct. 2022 </a></li>
       <ul>
-        <li>Spine Enhanced Climbing Autonomous Legged Exploration Robot (SCALER)</li>
-        <ul>
-          <li><a href="https://arxiv.org/abs/2207.01180">Y. Tanaka et al., "SCALER: A tough versatile quadruped free-climber robot," in Proc. IEEE/RSJ Intl. Conf. on Intelligent Robots and Systems, IROS, (Kyoto, Japan), Oct. 2022 </a></li>
-          <ul>
-              <li>Improved hardware reliability by remaking wires and redoing the leg wire management</li>
-              <li>Modified the purchased linear actuators by attaching cooling fans to prevent overheating damage</li>
-              <div class="imageBox">
-                <img src="media/RoMeLa/LinearActuatorModV1.gif" style="width:41%">
-                <img src="media/RoMeLa/LinearActuatorModV1.png" style="width:58%">
-              </div>
-              <li>Integrated an STM32 onboard the grippers to make them controllable via serial connection and redid the wiring so that the gripper is a standalone module connected by a single power line and 12 pin communication line</li>
-              <div class="imageBox">
-                <img src="media/RoMeLa/LinearActuatorModV2.gif" style="width:41%">
-                <img src="media/RoMeLa/LinearActuatorModV2.png" style="width:58%">
-              </div>
+        <li>Improved hardware reliability by remaking wires and redoing the leg wire management</li>
+        <li>Modified the purchased linear actuators by attaching cooling fans to prevent overheating damage</li>
+        <div class="card-holder">
+          <img src="media/RoMeLa/LinearActuatorModV1.gif" style="width:40%">
+          <img class="card"  src="media/RoMeLa/LinearActuatorModV1.png" style="width:60%">
+        </div>
+        <li>Integrated an STM32 onboard the grippers to make them controllable via serial connection and redid the wiring so that the gripper is a standalone module connected by a single power line and 12 pin communication line</li>
+        <div class="card-holder">
+          <img src="media/RoMeLa/LinearActuatorModV2.gif" style="width:40%">
+          <img class="card"  src="media/RoMeLa/LinearActuatorModV2.png" style="width:60%">
+        </div>
 
-              <li>Streamlined the second design by designing a custom PCB board that mounts the 8 pin circular connector which passes both the power and signal wires to the gripper using a single cable. Integrated dynamixel connectors used by the wrist and the voltage regulator needed to power the linear actuator. Also brought back the double fan design from the initial version to improve cooling during operation</li>
-              <div class="imageBox">
-                <img src="media/RoMeLa/LinearActuatorModV3.gif" style="width:41%">
-                <img src="media/RoMeLa/LinearActuatorModV3.png" style="width:58%">
-              </div>
-              
-          </ul>
-          <li><a href="https://arxiv.org/abs/2207.01418">Y. Shirai et al., "Simultaneous Contact-Rich Grasping and Locomotion via Distributed Optimization Enabling Free-Climbing for Multi-Limbed Robots", in Proc. IEEE/RSJ Intl. Conf. on Intelligent Robots and Systems, IROS, (Kyoto, Japan), Oct. 2022 </a></li>
-          <ul>
-            <li>Rewrote a pre-existing MATLAB visualization code for SCALAR to improve usability and future expandability by modularizing each component (main chassis, limbs, grippers, etc.)</li>
-            <div class="imageBox">
-              <img src="media/RoMeLa/MATLAB1.gif" style="width:50%">
-            </div>
-          </ul>
-        </ul>
-        <li>Garama RC Racing Platform</li>
-        <ul>
-          <li>Wrote a camera orientation estimation script that would take in a series of the car's first person view and figures out how the car moves within 3D space based on features found using the ORB algorithm</li>
-          <li>Reworked the wiring onboard by optimizing the wire lengths and fixed the soldering job done by the PhD student to improve reliability</li>
-          <li>Collected driving data used to train the behavior cloning neural network</li>
-          <div class="imageBox">
-            <img src="media/RoMeLa/Car2.png" style="width:49%">
-            <img src="media/RoMeLa/Car1.png" style="width:49%">
-            <img src="media/RoMeLa/Soldering.png" style="width:99%">
-          </div>
-        </ul>
+        <li>Streamlined the second design by designing a custom PCB board that mounts the 8 pin circular connector which passes both the power and signal wires to the gripper using a single cable. Integrated dynamixel connectors used by the wrist and the voltage regulator needed to power the linear actuator. Also brought back the double fan design from the initial version to improve cooling during operation</li>
+        <div class="card-holder">
+          <img src="media/RoMeLa/LinearActuatorModV3.gif" style="width:40%">
+          <img class="card" src="media/RoMeLa/LinearActuatorModV3.png" style="width:60%">
+        </div>
       </ul>
-
-      <hr>
-
-      <h3 style="text-align:left;"> Interconnected & Integrated Bioelectronics Lab (I<sup>2</sup>BL) 
-        <span style="float:right;">
-          Spring 2020 &#8211 Spring 2021
-        </span>
-      </h3>
+      <li><a href="https://arxiv.org/abs/2207.01418">Y. Shirai et al., "Simultaneous Contact-Rich Grasping and Locomotion via Distributed Optimization Enabling Free-Climbing for Multi-Limbed Robots", in Proc. IEEE/RSJ Intl. Conf. on Intelligent Robots and Systems, IROS, (Kyoto, Japan), Oct. 2022 </a></li>
       <ul>
-        <li>Worked for Prof. Sam Emaminejad to develop a near IR spectroscopy system for lower leg tissue oxygenation monitoring</li>
-        <ul>
-          <li>Looked into various transimpedance amplifier designs that improved the old design by achieving higher output precision with good noise performance, all with minimum power consumption</li>
-          <li>Redesigned the circuit schematic and rerouted the PCB to make it more compact (approx. 40% board area reduction) so that it can be manufactured on a flexible PCB</li>
-          <div class="imageBox">
-            <img src="media/I2BL/PCB1.png" style="width:32%">
-            <img src="media/I2BL/PCB2.png" style="width:32%">
-            <img src="media/I2BL/PCB3.png" style="width:32%">
-          </div>
-        </ul>
+        <li>Rewrote a pre-existing MATLAB visualization code for SCALAR to improve usability and future expandability by modularizing each component (main chassis, limbs, grippers, etc.)</li>
+        <div class="card-holder">
+          <img class="card" src="media/RoMeLa/MATLAB1.gif" style="width:60%">
+        </div>
       </ul>
-      
-      <hr>
+    </ul>
+    <li><b>Garama RC Racing Platform</b></li>
+    <ul>
+      <li>Wrote a camera orientation estimation script that would take in a series of the car's first person view and figures out how the car moves within 3D space based on features found using the ORB algorithm</li>
+      <div class="card-holder">
+        <img class="card" src="media/RoMeLa/CameraPoseAnimation.png" style="width:80%">
+      </div>
 
-      <h3 style="text-align:left;"> Dunn Lab
-        <span style="float:right;">
-          Fall 2019 &#8211 Winter 2022
-        </span>
-      </h3>
-        <ul>
-          <li>Worked with Prof. Bruce Dunn in the MSE department to develop a BLE enabled optoprobe device that is hooked up to a living mouse to send a two-channel optical stimulation to different parts of its brain via optical fibers</li>
-          <ul>
-            <li>Wrote a C++ script alongside another undergraduate student for the BMD-350 chip to communicate with an evaluation board hooked up with the computer</li>
-            <li>Designed a custom GUI within MATLAB to send the appropriate serial commands to the evaluation board which transmitted a sequence of bits that determined what frequency the two LEDs flashed at</li>
-            <div class="imageBox">
-              <img src="media/Optoprobe/GUI1.png" style="width:32%">
-              <img src="media/Optoprobe/GUI2.png" style="width:32%">
-              <img src="media/Optoprobe/GUI3.png" style="width:32%">
-            </div>
-          </ul>
-        </ul>
+      <li>Collected hours of driving data used to train the behavior cloning neural network using ROS2</li>
 
+      <li>Reworked the wiring onboard by optimizing the wire lengths and fixed the soldering job done by the PhD student to improve reliability</li>
+      <div class="card-holder">
+        <img class="card" src="media/RoMeLa/Car2.png" style="width:40%">
+        <img class="card" src="media/RoMeLa/Car1.png" style="width:40%">
+      </div>
+      <div class="card-holder">
+        <img class="card" src="media/RoMeLa/Soldering.png" style="width:80%">
+      </div>
+    </ul>
+  </ul>
 
-    </p>
+  <h3> Interconnected & Integrated Bioelectronics Lab (I<sup>2</sup>BL) 
+    <span class="align-right">Spring 2020 ~ Spring 2021</span>
+  </h3>
 
-    <hr>
-    <address>
-    <script>
-       const date = new Date(document.lastModified).toLocaleDateString();
-       document.write("Last Modified: "+date);
-    </script>
-    <br>
-      Hayato Kato</address>
-  </div>
+  <ul>
+    <li>Worked for Prof. Sam Emaminejad to develop a near IR spectroscopy system for lower leg tissue oxygenation monitoring</li>
+    <ul>
+      <li>Looked into various transimpedance amplifier designs that improved the old design by achieving higher output precision with good noise performance, all with minimum power consumption</li>
+      <li>Redesigned the circuit schematic and rerouted the PCB to make it more compact (approx. 40% board area reduction) so that it can be manufactured on a flexible PCB</li>
+      <div class="card-holder">
+        <img class="card" src="media/I2BL/PCB1.png" style="width:32.5%">
+        <img class="card" src="media/I2BL/PCB2.png" style="width:32%">
+        <img class="card" src="media/I2BL/PCB3.png" style="width:32%">
+      </div>
+    </ul>
+  </ul>
+
+  <h3> Dunn Lab
+    <span class="align-right">Fall 2019 ~ Winter 2022</span>
+  </h3>
+  <ul>
+    <li>Worked with Prof. Bruce Dunn in the MSE department to develop a BLE enabled optoprobe device that is hooked up to a living mouse to send a two-channel optical stimulation to different parts of its brain via optical fibers</li>
+    <ul>
+      <li>Wrote a C++ script alongside another undergraduate student for the BMD-350 chip to communicate with an evaluation board hooked up with the computer</li>
+      <li>Designed a custom GUI within MATLAB to send the appropriate serial commands to the evaluation board which transmitted a sequence of bits that determined what frequency the two LEDs flashed at</li>
+      <div class="card-holder">
+        <img src="media/Optoprobe/GUI1.png" style="width:33%">
+        <img src="media/Optoprobe/GUI2.png" style="width:33%">
+        <img src="media/Optoprobe/GUI3.png" style="width:33%">
+      </div>
+    </ul>
+  </ul>
+
+  <hr>
+  <address>
+  <script>
+     const date = new Date(document.lastModified).toLocaleDateString();
+     document.write("Last Modified: "+date);
+  </script>
+  <a title="Back to Top of Page" style="float:right;" href="#top"><i class="fa-solid fa-caret-up btn"></i></a>
+  <br>
+    Hayato S. Kato
+  </address>
+
+</main>
 
 </body>
 </html>

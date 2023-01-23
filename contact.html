@@ -1,48 +1,54 @@
 <!DOCTYPE html>
-<html>
-<!-- Tab Name -->
-<head>
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <link rel="icon" href="media/Profile/TinyRobot.jpg">
-  <title>Hayato Kato - Contacts</title>
-</head>
 
+<html>
+<head>
+   <link rel="stylesheet" href="main.css">
+</head>
 <body>
 
-  <div class="sidebar">
-    <img src="media/Profile/TinyRobot.jpg" alt="Tiny" width=150px height=150px>
-    <t> Hayato S. Kato </t>
-    <a href="index.html"> Home </a>
-    <a href="about.html"> About </a>
-    <a href="projects.html"> Projects </a>
-    <a href="research.html"> Research </a>
-    <a href="gallery.html"> Gallery </a>
+<div class="navbar">
+  <img src="media/Profile/TinyRobot.jpg" alt="Tiny" class="icon">
+  <name>Hayato S. Kato</name>
+  <tabs>
+    <a_buffer></a_buffer>
+    <a_container><a_top>
+      <a href="index.html"> Home </a>
+      <a href="about.html"> About </a>
+      <a href="project.html"> Project </a>
+      <a href="research.html"> Research </a>
+      <a href="coursework.html"> Coursework </a>
+      <a href="gallery.html"> Gallery </a>
+    </a_top></a_container>
     <a_selected> Contact </a_selected>
-  </div>
+    <a_container><a_bottom>
+    </a_bottom></a_container>
+  </tabs>
+</div>
 
-  <div class="main">
-    <h3> Contact Information </h3>
-    <hr>
+<main>
+  <h1>Contact Information</h1>
+  <div style="padding-bottom:1rem" style="text-align: center;">
+    <img class="card" src="media/Profile/Hayato.jpg" height=300px>
 
-    <p>
-    <img src="media/Profile/Hayato.jpg" height=300px>
-      <br>
-      Email: <a href = "mailto: hayatokato@ucla.edu">hayatokato@ucla.edu</a>
-      <br>
-      Phone: (949) 933-7339
-      <br>
-      LinkedIn: <a href="https://www.linkedin.com/in/hayatokato/">https://www.linkedin.com/in/hayatokato/</a>
-    </p>
-
-    <hr>
-    <address>
-    <script>
-       const date = new Date(document.lastModified).toLocaleDateString();
-       document.write("Last Modified: "+date);
-    </script>
     <br>
-      Hayato Kato</address>
+    Email: <a href = "mailto: hayatokato@ucla.edu">hayatokato@ucla.edu</a>
+    <br>
+    Phone: <a href="tel:9499337339">(949) 933-7339</a>
+    <br>
+    LinkedIn: <a href="https://www.linkedin.com/in/hayatokato/">https://www.linkedin.com/in/hayatokato/</a>
+    <br>
+    YouTube: <a href="https://www.youtube.com/channel/UC48537BjrrUNDz5v6ih8KuQ">@hayatokato8810</a>
   </div>
+  <hr>
+  <address>
+  <script>
+     const date = new Date(document.lastModified).toLocaleDateString();
+     document.write("Last Modified: "+date);
+  </script>
+  <br>
+    Hayato S. Kato
+  </address>
+</main>
 
 </body>
 </html>

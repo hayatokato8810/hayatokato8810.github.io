@@ -1,65 +1,129 @@
 <!DOCTYPE html>
-<html>
-<!-- Tab Name -->
-<head>
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <link rel="icon" href="media/Profile/TinyRobot.jpg">
-  <title>Hayato Kato - Home</title>
-</head>
 
+<html>
+<head>
+   <link rel="stylesheet" href="main.css">
+   <script src="https://kit.fontawesome.com/23291616ec.js" crossorigin="anonymous"></script>
+</head>
 <body>
 
-  <div class="sidebar">
-    <img src="media/Profile/TinyRobot.jpg" alt="Tiny" width=150px height=150px>
-    <t> Hayato S. Kato </t>
-    <a href="index.html"> Home </a>
-    <a href="about.html"> About </a>
-    <a href="projects.html"> Projects </a>
-    <a href="research.html"> Research </a>
+<div class="navbar">
+  <img src="media/Profile/TinyRobot.jpg" alt="Tiny" class="icon">
+  <name>Hayato S. Kato</name>
+  <tabs>
+    <a_buffer></a_buffer>
+    <a_container><a_top>
+      <a href="index.html"> Home </a>
+      <a href="about.html"> About </a>
+      <a href="project.html"> Project </a>
+      <a href="research.html"> Research </a>
+    </a_top></a_container>
     <a_selected> Coursework </a_selected>
-    <a href="gallery.html"> Gallery </a>
-    <a href="contact.html"> Contact </a>
+    <a_container><a_bottom>
+      <a href="gallery.html"> Gallery </a>
+      <a href="contact.html"> Contact </a>
+    </a_bottom></a_container>
+  </tabs>
+</div>
+
+<main>
+  <h1>Coursework</h1>
+   
+  <h3>Single Agent Path Planning within Dynamical Environments with Large-Scale Obstacles - ECE209AS
+  </h3>
+  <div class="card-holder">
+    <img class="card" src="media/ECE209AS/worldMap_graph.png" style="width:35%">
+    <img class="card" src="media/ECE209AS/animation.gif" style="width:35%">
+  </div>
+  <p>
+    A final group project that explored the different topics within computational robotics which we learned throughout the course. We looked specifically at dynamical environment navigation and tackled the challenge of reducing the computational complexity and cost while ensuring safety for the traversing agent. I primarily took lead in setting up the Python simulation environment and scripting the QuadTree data structure that we used to decompose the original state space of the map into a smaller set. Other members wrote the graph-based search methods used to find a path within the generated graph (shown in blue) and updating the randomly simulated obstacles throughout the environment.
+  </p>
+  <div style="text-align:right;">
+    Click <a href="pdf/ECE209AS_Final_Project_Report.pdf">here</a> to see more
   </div>
 
-  <div class="main">
-    <h3>Coursework</h3>
-    <hr>
+  <h3>RC Car Racing Line Tracking Using Model Predictive Control - MAE271D
+  </h3>
 
-    <p>
-      <h3 style="text-align:left;"> ECE209AS &#8211 Computational Robotics
-        <span style="float:right;">
-          Fall 2022
-        </span>
-      </h3>
+  <div class="card-holder">
+    <img class="card" src="media/MAE271D/pythonRoboticsMPC.png" style="width:45%">
+    <img class="card" src="media/MAE271D/linearTracking.gif" style="width:35%">
+  </div>
+  <p>
+    A final group project that showcases the effectiveness of model predictive control within a nonlinear system. Here, the RC car simulation runs off of a dynamical bicycle model which mimics the real system as close as possible (accounts for things such as tire slippage and lateral velocities), and uses model predictive control to generate a trajectory that is expected to drive the car towards the desired line. The left figure shows an MPC implemented by the PythonRobotics library written by AtsushiSakai, while the right figure shows a custom-written MPC running using a linear model.
+  </p>
 
-      <ul>
-        <li>Implementation of various topics in computational robotics throughout weekly challenge problems</li>
-        <li>Explored the ideas introduced in class </li>
+  <h3>Multi-Robot Ground Swarm Simulation Using a Minimally Invasive Safety Critical Controller - ECE236C
+  </h3>
 
-      </ul>
-    </p>
-
-    <hr>
-
-    <p>
-      <h3 style="text-align:left;"> MAE271D - Special Topics in Dynamic Systems Control
-        <span style="float:right;">
-          Fall 2022
-        </span>
-      </h3>
-    </p>
-
-  
-    <hr>
-    <address>
-    <script>
-       const date = new Date(document.lastModified).toLocaleDateString();
-       document.write("Last Modified: "+date);
-    </script>
-    <br>
-      Hayato Kato</address>
+  <div class="card-holder">
+    <img class="card" src="media/ECE236C/swarmAnimation_CVX.gif" style="width:50%">
+  </div>
+  <p>
+    A course project required proposing a large-scale optimization problem that can utilize techniques learned in class to efficiently solve such problems. From a nonlinear controls course that I have taken in a previous quarter, I borrowed a problem from the textbook that involved a swarm of ground robots which uses a control safety function to ensure each robot avoids collisions with another. I applied Dykstra's projection algorithm to show that a significant improvement in computation speed is made thanks to optimizing the solving technique based on the problem characteristics.
+  </p>
+  <div style="text-align:right;">
+    Click <a href="pdf/ECE236C_Project.pdf">here</a> to see more
   </div>
 
+  <h3>Semi-Autonomous Marshland Soil Core Sampling Robot - ECE183D Capstone
+  </h3>
+
+  <div class="card-holder">
+    <img class="card" src="media/Capstone/SoilCoreSampling.png" style="width:32%">
+    <img class="card" src="media/Capstone/K_Cluster.png" style="width:26%">
+    <img class="card" src="media/Capstone/AntColonyOptimization.png" style="width:26%">
+  </div>
+  <p>
+    For my senior capstone project, I collaborated with 2 other electrical engineering major students and 4 mechanical engineering major students to design a semi-autonomous marshland soil core sampling robot used for land surveying. Although we were unable to build a physical robot due to the pandemic forcing the course to being remote, we were able to come up with an in-depth design concept that involved a software simulation that generates an optimal surveying route. This was computed by using the same size K-means clustering algorithm and the ant colony optimization to find a path that reduces the load on the user.
+  </p>
+  <div style="text-align:right;">
+    Click <a href="pdf/ECE183D_CDR.pdf">here</a> to see more
+  </div>
+
+  <h3>Chess Handling with Extremity Surrogate System (C.H.E.S.S.) - MAEC163A
+  </h3>
+
+  <div class="card-holder">
+    <img class="card" src="media/CHESS/Animation.gif" style="width:40%">
+    <img class="card" src="media/CHESS/Render.png" style="width:35%">
+  </div>
+  <div class="card-holder">
+    <img class="card" src="media/CHESS/Path.png"  style="width:78%">
+  </div>
+  <p>
+    A course final project aimed to present our understanding of forward and inverse kinematics of serial robots. Our project group came up with a remote chess playing robot capable of manipulating the chess pieces of an actual chess board using a unique end effector that could hold two pieces simultaneously on both ends. This enables fast piece capturing reminiscent of how a human holds both pieces using one hand. Within the group, I was mainly in charge of developing the MATLAB simulation of our 5 DoF manipulator robot and writing a script in charge of generating smooth trajectories that properly avoided other pieces on the board.
+  </p>
+  <div style="text-align:right;">
+    Click <a href="pdf/CHESS_Report.pdf">here</a> to see more
+  </div>
+
+  <h3>Line Following Robot Competition - ECE3
+  </h3>
+
+  <div class="card-holder">
+    <img class="card" src="media/ECE3/LineFollow.png"style="width:42%">
+    <img class="card" src="media/ECE3/LineFollow_Under.png"" style="width:42%">
+  </div>
+  <div class="card-holder">
+    <iframe width="560" height="320" src="https://www.youtube.com/embed/VG9apbbCGPM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <p>
+    Learned about basic circuitry and breadboard prototyping in class, and were tasked to assemble a line-following robot which relied on a pair of down-looking phototransistors which checked for the color of the ground it was passing over. We calculated the ideal resistor used in the voltage divider circuit to maximize the sensitivity, and even built an enclosure around the phototransistors to ensure no other environmental interferences affected its line-sensing capabilities. We also tuned our own PD controller which enabled a fast yet smooth drive, ultimately yielding 1st place within our lab section during the competition we had on finals week.
+  </p>
+
+  <hr>
+
+  <address>
+  <script>
+     const date = new Date(document.lastModified).toLocaleDateString();
+     document.write("Last Modified: "+date);
+  </script>
+  <a title="Back to Top of Page" style="float:right;" href="#top"><i class="fa-solid fa-caret-up btn"></i></a>
+  <br>
+    Hayato S. Kato
+  </address>
+</main>
 
 </body>
 </html>

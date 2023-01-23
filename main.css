@@ -1,193 +1,213 @@
-.main {
-  margin-left: 140px;
-  padding: 10px;
-  padding-left: 20px;
-  scroll-behavior: smooth;
-}
-
-.sidebar {
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none;
-  height: 100%;
-  width: 150px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: black;
-  overflow-x: hidden;
-  <!-- padding: 20px; -->
-  padding-top: 15px;
-}
-
-.sidebar t {
-  cursor: default;
-  padding: 5px 5px 5px 15px;
-  text-decoration: none;
-  font-size: 30px;
-  color: white;
-  display: block;
-}
-
-.sidebar a {
-  display: block;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  text-decoration: none;
-  font-size: 20px;
-  color: gray;
-  transition: 0.2s;
-}
-
-.sidebar a:hover {
-  padding-left: 15px;
-  color: white;
-}
-
-.sidebar a_selected {
-  cursor: default;
-  display: block;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  text-decoration: none;
-  font-size: 20px;
+body {
   color: black;
-  background-color: gray;
-  transition: 0.2s;
+  background-color: white;
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin-left: 9rem;
+  padding: 1rem;
+}
+
+
+h3 {
+  display:block;
+  background-color: grey;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size:1.2rem;
+  color: white;
+  overflow: auto;
+}
+
+.align-left {
+  float: left;
+}
+.align-right {
+  float: right;
+}
+
+hr {
+  height: 0.2rem;
+  border-radius: 1rem;
+  background: black;
+  border: none;
 }
 
 ul {
   display: block;
-  list-style-type: square;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 30px;
+  list-style-type: disc;
 }
 
-hr {
-  display: block;
-  margin-top: 3px;
-  margin-bottom: 3px;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: 2px;
+p {
+  padding: 0.5rem;
 }
 
-h3 {
-  display: block;
-  font-size: 1.17em;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 0;
-  margin-right: 0;
+img.icon {
+  width: 7rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+.round-corner {
+  border-radius: 0.5rem;
+}
+
+.navbar {
+  width: 9rem;
+  height: 100vh;
+  position: fixed;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.navbar name {
+  color: white;
+  font-size: 2em;
   font-weight: bold;
 }
 
-.divider{
-  width:5px;
-  height:5px;
+.navbar tabs {
+  width: 8rem;
+  margin-left: 1rem;
+  font-weight: bold;
 }
 
-.border{
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 5px;
-  border-width:  100px;
-  box-shadow: 2px 2px 4px 2px #999;
-}
-
-.collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
+.navbar a {
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
   text-align: left;
-  outline: none;
-  font-size: 15px;
+  font-size: 1rem;
+  color: gray;
+  background-color: rgba(255,0,0,0);
+  transition: 0.2s;
 }
 
-.active, .collapsible:hover {
-  background-color: #555;
-}
-
-.collapsible:after {
-  content: '\002B';
-  color: white;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-
-.active:after {
-  content: "\2212";
-}
-
-.image{
-  text-align: center;
-}
-
-.columnLeft{
-  float: left;
-  width: 41.3%;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-.columnRight{
-  float: left;
-  width: 58.7%;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.columnFull{
-  float: left;
-  width: 100%;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.columnHalf{
-  float: left;
-  width: 48%;
-  padding: 0.5%;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.columnThird{
-  float: left;
-  width: 32%;
-  padding: 0.5%;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.imageRow::after{
-  content: "";
-  clear: both;
+.navbar a_selected {
+  cursor: default;
   display: block;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  text-decoration: none;
+  text-align: left;
+  font-size: 1rem;
+  color: black;
+  background-color: white;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
 }
 
-.imageBox{
-  text-align: center;
-  object-fit: contain;
+.navbar a_container {
+  display: block;
+  background-color: white;
 }
 
-.content {
-  padding: 0 20px;
-  max-height: 0;
+.navbar a_buffer {
+  display: block;
+  min-height: 1rem;
+}
+
+.navbar a_top {
+  display: block;
+  background-color: black;
+  border-bottom-right-radius: 0.5rem;
+  min-height: 1rem;
+}
+
+.navbar a_bottom {
+  display: block;
+  background-color: black;
+  border-top-right-radius: 0.5rem;
+  min-height: 1rem;
+}
+
+.navbar a:hover {
+  padding-left: 1rem;
+  color: white;
+}
+
+.gallery-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-auto-rows: 180px;
+  grid-auto-flow: dense;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  
+  border-radius: 0.5rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.2s;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+  box-shadow: rgba(0,0,0,0.5) 0rem 0.2rem 0.5rem;
+  object-fit: cover;
 }
+
+.card:hover {
+}
+
+.card-holder {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-noshadow {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  
+  border-radius: 0.5rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.2s;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 750px) {
+  .card-large {
+    grid-row: span 2 / auto;
+    grid-column: span 2 / auto;
+  }
+
+  .card-tall {
+    grid-row: span 2 / auto;
+  }
+
+  .card-wide {
+    grid-column: span 2 / auto;
+  }
+}
+
+.btn {
+  background-color: black; /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  font-size: 16px; /* Set a font size */
+  padding: 0.6rem 0.8rem; /* Some padding */
+  cursor: pointer; /* Mouse pointer on hover */
+  border-radius: 0.5rem;
+}
+
+
+
+
+
+
+
