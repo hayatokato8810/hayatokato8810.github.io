@@ -76,6 +76,7 @@ img.icon {
   width: 8rem;
   margin-left: 1rem;
   font-weight: bold;
+  background-color: rgba(0,0,0,0);
 }
 
 .navbar a {
@@ -101,6 +102,7 @@ img.icon {
   background-color: white;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
+  border: hidden;
 }
 
 .navbar a_container {
